@@ -49,7 +49,7 @@ public class CssSelectorTests {
     @Test(priority = 0)
     public void clickButtonTest(){
         driver.get("https://demoqa.com/elements");
-        WebElement btnClick = driver.findElement(By.cssSelector("li#item-4 span.text"));
+        WebElement btnClick = driver.findElement(By.cssSelector("div.show li:nth-child(5) span.text"));
         btnClick.click();
         WebElement result = driver.findElement(By.cssSelector("div[class*='col-md-6'] div:nth-child(2) div:last-child button.btn-primary"));
         result.click();
